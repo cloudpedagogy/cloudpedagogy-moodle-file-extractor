@@ -14,6 +14,14 @@ Moodle stores backed-up files using content hashes. This script reads `files.xml
 - Generates `moodle_file_manifest.csv`
 - Uses only the Python standard library
 
+## Example output
+
+The extractor recovers Moodle files and presents them through complementary course, technical-context and file-type views.
+
+![Example of the Moodle file extractor outputs](docs/images/screenshot.png)
+
+*Example output showing the recovered Moodle resources and generated documentation.*
+
 ## Requirements
 
 - Python 3.9 or later
