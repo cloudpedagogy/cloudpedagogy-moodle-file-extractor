@@ -13,11 +13,20 @@ source backup.
 
 ## Example output
 
-The extractor recovers Moodle files and presents them through complementary course, technical-context and file-type views.
+Running the extractor with `--mode all` generates three complementary views of the recovered files:
 
-![Example of the Moodle file extractor outputs](docs/images/screenshot.png)
+- `files_by_moodle_context/` — organised by Moodle’s technical component and file-area metadata;
+- `resource_bundle/` — organised by course section and activity;
+- `resource_bundle_by_type/` — organised by file type.
 
-*Example output showing the recovered Moodle resources and generated documentation.*
+It also generates:
+
+- `resource_manifest.csv` — a searchable inventory of recovered files;
+- `extraction_report.md` — a summary of extraction results, integrity checks and warnings.
+
+![Example of one Moodle file extractor output](docs/images/screenshot.png)
+
+*The screenshot shows one example output view. Additional course-organised and file-type views, together with the CSV manifest and extraction report, are also available when using `--mode all`.*
 
 
 ## Why use this tool?
